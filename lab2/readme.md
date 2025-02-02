@@ -16,6 +16,12 @@ Next, install QEMU, which allows you to emulate ARM architecture:
 sudo apt install qemu-user-static
 ```
 
+## Convert C Code to Assembly
+To convert C code to assembly, use the following command:
+```bash
+arm-linux-gnueabihf-gcc -S -o <output_file>.s <input_file>.c
+```
+
 ## Compiling and Running the Code
 
 ### 1. Compile the Code
@@ -29,3 +35,4 @@ After compiling, execute the program with QEMU by using the command below, repla
 ```bash
 qemu-arm-static <output_file>
 ```
+

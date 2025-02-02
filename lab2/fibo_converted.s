@@ -66,7 +66,7 @@ main:
 	push	{r7, lr}
 	sub	sp, sp, #8
 	add	r7, sp, #0
-	movs	r0, #15
+	movs	r0, #44
 	bl	fibonacci(PLT)
 	str	r0, [r7, #4]
 	ldr	r1, [r7, #4]
